@@ -1,0 +1,33 @@
+<?php
+
+$peso = 72;
+$altura = 1.7; //usar o ponto ao invés da virgula para número decimal//
+$imc;
+
+$imc = $peso / ( $altura * $altura );
+/*
+echo 'O IMC  do peso ' . $peso . 
+    'e da altura ' . $altura . 
+    'é ' . $imc;
+
+*/
+
+if($imc < 18.5) {
+    echo 'IMC ' . $imc . 'Classificação Magresa grau 0.';
+
+} 
+if($imc >= 18.5 && $imc <= 24.9) {
+    echo 'IMC ' . $imc . 'Classificação Normal grau 0.';
+
+}  
+if($imc >= 25.0 && $imc <=29.9) {
+    echo 'IMC ' . $imc . 'Classificação Sobrepeso grau 1.';
+
+} 
+if($imc >= 30.0 && $imc <= 39.9) {
+    echo 'IMC ' . $imc . 'Classificação Obesidade grau 2.';
+
+}   
+if($imc > 40.0 ) {
+    echo 'IMC ' . $imc . 'Classificação Obesidade grau 3.';
+}
