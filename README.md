@@ -4,57 +4,88 @@
 ---
 
 
-### Curso de Programação Web ministrado por @MValeriano 
+## Curso de Programação Web ministrado por @MValeriano 
 
 
 <details>
 <summary>📋 Conteúdo Programático </summary>
 
-### 🗄️ Banco de Dados (27 horas - 9 dias)
+### 🎨 Front-End (51 horas - 18 dias)
 
-- [x]  Conceitos básicos de Banco de Dados
-- [x]  SGBD: segurança, integridade, transações
-- [x]  Modelagem conceitual (ER): entidades, atributos, relacionamentos
-- [x]  Normalização e cardinalidade
-- [x]  Modelo lógico e físico
-- [x]  SQL: DQL, DML, DDL, DCL, DTL
-- [x]  Comandos SQL práticos
-- [x]  Relacionamentos e exercícios práticos
-- [x]  Projeto final com criação de base de dados
-  
+#### HTML
+- Principais TAGS HTML (form, input, label, textarea, select, option, fieldset, caption, legend, span, div)
+- Principais TAGS HTML (table, tr, td, th, thead, tbody, tfoot, colspan, rowspan)
+- Principais TAGS HTML (a, img, figure, figcaption)
+
+#### CSS
+- Introdução ao CSS - propriedades, sintaxe, estilos interno, externo e inline
+- Projeto landing page: estrutura de pastas, propriedades básicas, box model
+- Propriedades avançadas: display, float, overflow, position
+- Propriedades de texto, background, fonte, borda
+- Unidades de medida e seletores CSS
+- Layouts: Flexbox, Grid, Float e Position
+
+#### JavaScript
+- Introdução à lógica, algoritmos e JavaScript
+- Tipos de Dados e Operadores
+- Declaração de Variáveis
+- Laços de Repetição e Funções
+- Estrutura de Dados: Objetos, Arrays e JSON
+- Eventos e manipulação do DOM
+- Projeto Fetch API
+- Projeto Final com manipulação completa do DOM
+
+### 🗄️ Banco de Dados (27 horas - 9 dias)
+- Conceitos básicos de Banco de Dados
+- SGBD: segurança, integridade, transações
+- Modelagem conceitual (ER): entidades, atributos, relacionamentos
+- Normalização e cardinalidade
+- Modelo lógico e físico
+- SQL: DQL, DML, DDL, DCL, DTL
+- Comandos SQL práticos
+- Relacionamentos e exercícios práticos
+- Projeto final com criação de base de dados
+
 ### ⚙️ Lógica de Programação (12 horas - 3 dias)
-- [x]  Introdução à Lógica de Programação
-- [x]  Variáveis, constantes e tipos de dados
-- [x]  Operadores aritméticos e lógicos
-- [x]  Estruturas condicionais (if, else, switch)
-- [x]  Estruturas de repetição (for, while, do while)
-- [x]  Arrays e objetos
-- [x]  Funções e modularização
-- [x]  Escopo de variáveis
- 
+- Introdução à Lógica de Programação
+- Variáveis, constantes e tipos de dados
+- Operadores aritméticos e lógicos
+- Estruturas condicionais (if, else, switch)
+- Estruturas de repetição (for, while, do while)
+- Arrays e objetos
+- Funções e modularização
+- Escopo de variáveis
+
+
 ### 🔧 Back-End com PHP OOP (36 horas - 12 dias)
-- [x]  Introdução à Programação Orientada a Objetos
-- [x]  Classes e Objetos
-- [ ]  Propriedades e Métodos
-- [ ]  Abstração e Encapsulamento
-- [ ]  Método Construtor (`__construct`)
-- [ ]  Herança e polimorfismo
-- [ ]  Arrays de Objetos
-- [ ]  Tratamento de Erros (try/catch)
-- [ ]  Conexão com Banco de Dados
-- [ ]  Projeto prático integrado
+- Introdução à Programação Orientada a Objetos
+- Classes e Objetos
+- Propriedades e Métodos
+- Abstração e Encapsulamento
+- Método Construtor (`__construct`)
+- Herança e polimorfismo
+- Arrays de Objetos
+- Tratamento de Erros (try/catch)
+- Conexão com Banco de Dados
+- Projeto prático integrado
+
+  
 </details>
+
+#### Projeto Livraria Zé de Livro
 
 ---
 
-### Curso Github por @gustavoguanabara
+## Curso Github por @gustavoguanabara
 
 O curso é gratuito e está disponivel no *youtube* e o reposiório no [link](https://github.com/gustavoguanabara/git-github.git). 
 
+<details>
+<summary> 📋 Conteúdo Programático </summary>
+  
+  ### O que é Git e Github
 
-📋 Conteúdo Programático
-
-
+</details>
 
 
 
