@@ -1,0 +1,62 @@
+body{
+        font-family: "Poppins", sans-serif;
+        background-color: #222222;
+        color: #fff;
+
+}
+
+span{
+        color: #840ec9;
+}
+.conta{
+        border: 2px solid #840ec9;
+        border-radius: 8px;
+        padding: 8px 16px;
+}
+
+a{
+        color:#fff;
+        text-decoration: none ;
+}
+
+input,button{
+        border: none;
+        border-radius: 20px;
+        padding: 10px 15px;
+}
+
+button{
+        background-color: #840ec9;
+        color: #fff;
+        width: 100px;
+        font-weight: bold;
+}
+
+h2{
+        font-size: 45px;
+}
+
+p{
+        font-size: 20px;
+}
+
+header{
+        display: flex;
+}
+
+main{
+        display: flex;
+}
+
+.menu{
+        display: flex;
+}
+
+
+
+
+
+
+
+
+
