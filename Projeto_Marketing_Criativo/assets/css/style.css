@@ -2,6 +2,8 @@ body{
         font-family: "Poppins", sans-serif;
         background-color: #222222;
         color: #fff;
+        width: 30%;
+        margin-top: 30px;
 
 }
 
@@ -25,15 +27,30 @@ input,button{
         padding: 10px 15px;
 }
 
+input{
+        margin-bottom: 20px;
+        width: 600px;
+}
+
+
 button{
         background-color: #840ec9;
         color: #fff;
         width: 100px;
         font-weight: bold;
+        width: 400px;
+
+}
+h1{
+        font-weight: 80;
+}
+h1, h2 {
+        line-height: 0.8;
 }
 
 h2{
         font-size: 45px;
+        line-height: 0.8;
 }
 
 p{
@@ -42,21 +59,40 @@ p{
 
 header{
         display: flex;
+        width: 100vw;
 }
 
 main{
         display: flex;
 }
 
-.menu{
-        display: flex;
+.menuContainer{
+        width: 60%;
+        
+}
+
+.cabecalho{
+        width: 20%;
 }
 
 
+.menu{
+        display: flex;
+        align-items: center;
+        height: 30px;
+        justify-content: space-around;
+}
 
+form{
+        display: flex;
+        flex-direction: column;
+}
 
-
-
-
-
+.container{
+        display:flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+       
+}
 
