@@ -75,7 +75,9 @@
 #### Projeto Livraria Zé de Livro
 
 #### Projeto Feirinha Virtual 
-[Link](https://github.com/Thay-Silva-01/Aprendizagem/tree/b46d4eba9b8c80e9e12bd7b2160ae30c1edc5274/Curso%20de%20Programa%C3%A7%C3%A3o%20Web/Projeto%20Feirinha%20Virtual)
+[Link](https://thay-silva-01.github.io/Aprendizagem/)
+
+#### Landin Page
 
 ---
 
