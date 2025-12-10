@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aprendizagem — Repositório de Estudos</title>
+
+  <style>
+    :root{
+      --bg:#0f1220;
+      --panel:#151a2c;
+      --text:#e7eaf6;
+      --muted:#a8b0c7;
+      --border:#273055;
+      --accent:#7c5cff;
+      --accent-2:#00c2a8;
+      --link:#5ad5ff;
+      --danger:#ff6b6b;
+      --ok:#37d399;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:
+        radial-gradient(1200px 600px at 10% -20%, #1a2040 0%, var(--bg) 45%) fixed,
+        linear-gradient(180deg, #0d1020 0%, var(--bg) 100%) fixed;
+      color:var(--text);
+      font:16px/1.6 "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;
+    }
+
+    .wrap{max-width:1000px; margin:0 auto; padding:32px 20px 60px}
+
+    header{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:20px; margin-bottom:24px;
+    }
+    h1{margin:0; font-size:clamp(24px,4.5vw,36px)}
+    .subtitle{margin:6px 0 0; color:var(--muted)}
+    .badge{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 14px; border-radius:12px; font-weight:600;
+      background:linear-gradient(135deg, rgba(124,92,255,.15), rgba(0,194,168,.15));
+      border:1px solid var(--border); box-shadow:var(--shadow);
+      backdrop-filter:saturate(130%) blur(8px);
+    }
+
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0) 40%), var(--panel);
+      border:1px solid var(--border);
+      border-radius:16px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      margin-bottom:18px;
+    }
+    .card .inner{padding:18px 18px 8px}
+    h2{margin:0 0 10px; font-size:clamp(18px,3.5vw,24px)}
+    h3{margin:18px 0 8px; font-size:clamp(16px,3vw,20px); color:var(--accent-2)}
+    h4{margin:12px 0 8px; font-size:clamp(15px,2.5vw,18px); color:var(--accent)}
+
+    p{margin:10px 0}
+    .muted{color:var(--muted)}
+
+    details{border-top:1px dashed var(--border); padding-top:10px; margin-top:10px}
+    summary{cursor:pointer; font-weight:700; display:flex; align-items:center; gap:8px}
+    summary:hover{color:var(--accent)}
+    details[open] summary{color:var(--accent-2)}
+
+    /* Checklists */
+    ul{margin:8px 0 16px; padding-left:18px}
+    li{margin:6px 0}
+    .checklist li{
+      display:flex; align-items:flex-start; gap:10px;
+    }
+    .box{
+      width:18px; height:18px; border:2px solid var(--border); border-radius:6px;
+      display:inline-flex; align-items:center; justify-content:center;
+      margin-top:2px; flex:0 0 18px; background:rgba(255,255,255,.03);
+    }
+    .box.ok{border-color:#2aa198; background:rgba(55,211,153,.12)}
+    .box.ok::after{content:"✓"; color:var(--ok); font-weight:800; font-size:13px}
+    .box.todo{border-color:#3a4675; background:rgba(255,255,255,.02)}
+    .tag{
+      display:inline-block; padding:4px 10px; border:1px solid var(--border);
+      border-radius:999px; color:var(--muted); font-size:12px; margin-right:8px;
+    }
+
+    a{color:var(--link); text-decoration:none; border-bottom:1px dotted rgba(90,213,255,.5)}
+    a:hover{color:#9fe9ff; border-bottom-color:#9fe9ff}
+
+    .projects{
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:14px; margin-top:8px;
+    }
+    .project{background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:14px}
+    .status{
+      margin-top:8px; font-size:14px;
+    }
+    .status strong{color:var(--accent-2)}
+
+    footer{margin-top:28px; color:var(--muted); font-size:14px; text-align:center}
+    .divider{height:1px; background:var(--border); margin:14px 0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1># Aprendizagem</h1>
+        <p class="subtitle">Este repositório reúne tudo que vou construindo e descobrindo enquanto aprendo programação e como irei aplicar à economia.</p>
+      </div>
+      <span class="badge">📚 Progresso de estudos</span>
+    </header>
+
+    <!-- Curso de Programação Web -->
+    <section class="card">
+      <div class="inner">
+        <h2>Curso de Programação Web ministrado por @MValeriano</h2>
+
+        <details open>
+          <summary>📋 Conteúdo programático</summary>
+
+          <h3>🗄️ Banco de Dados (27 horas — 9 dias)</h3>
+          <ul class="checklist">
+            <li><span class="box ok"></span>Conceitos básicos de Banco de Dados</li>
+            <li><span class="box ok"></span>SGBD: segurança, integridade, transações</li>
+            <li><span class="box ok"></span>Modelagem conceitual (ER): entidades, atributos, relacionamentos</li>
+            <li><span class="box ok"></span>Normalização e cardinalidade</li>
+            <li><span class="box ok"></span>Modelo lógico e físico</li>
+            <li><span class="box ok"></span>SQL: DQL, DML, DDL, DCL, DTL</li>
+            <li><span class="box ok"></span>Comandos SQL práticos</li>
+            <li><span class="box ok"></span>Relacionamentos e exercícios práticos</li>
+            <li><span class="box ok"></span>Projeto final com criação de base de dados</li>
+          </ul>
+
+          <div class="divider"></div>
+
+          <h3>⚙️ Lógica de Programação (12 horas — 3 dias)</h3>
+          <ul class="checklist">
+            <li><span class="box ok"></span>Introdução à Lógica de Programação</li>
+            <li><span class="box ok"></span>Variáveis, constantes e tipos de dados</li>
+            <li><span class="box ok"></span>Operadores aritméticos e lógicos</li>
+            <li><span class="box ok"></span>Estruturas condicionais (if, else, switch)</li>
+            <li><span class="box ok"></span>Estruturas de repetição (for, while, do while)</li>
+            <li><span class="box ok"></span>Arrays e objetos</li>
+            <li><span class="box ok"></span>Funções e modularização</li>
+            <li><span class="box ok"></span>Escopo de variáveis</li>
+          </ul>
+
+          <div class="divider"></div>
+
+          <h3>🔧 Back-End com PHP OOP (36 horas — 12 dias)</h3>
+          <ul class="checklist">
+            <li><span class="box ok"></span>Introdução à Programação Orientada a Objetos</li>
+            <li><span class="box ok"></span>Classes e Objetos</li>
+            <li><span class="box todo"></span>Propriedades e Métodos</li>
+            <li><span class="box todo"></span>Abstração e Encapsulamento</li>
+            <li><span class="box todo"></span>Método Construtor <code>__construct</code></li>
+            <li><span class="box todo"></span>Herança e polimorfismo</li>
+            <li><span class="box todo"></span>Arrays de Objetos</li>
+            <li><span class="box todo"></span>Tratamento de Erros (try/catch)</li>
+            <li><span class="box todo"></span>Conexão com Banco de Dados</li>
+            <li><span class="box todo"></span>Projeto prático integrado</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="card">
+      <div class="inner">
+        <h2>Projetos</h2>
+        <div class="projects">
+          <div class="project">
+            <h3>Projeto Feirinha Virtual</h3>
+            <p class="muted">Marketplace de produtos locais, com listagem e carrinho simples.</p>
+            <p><a href="https://thay-silva-01.github.io/Aprendizagem/" target="_blank" rel="noopener">Acessar</a></p>
+            <div class="status"><strong>Status:</strong> Em evolução</div>
+            <div class="status"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+          </div>
+
+          <div class="project">
+            <h3>Aplicações na Economia</h3>
+            <p class="muted">Explorações de como programação apoia análise econômica (dashboards, simulações, scraping).</p>
+            <div class="status"><strong>Status:</strong> Em planejamento</div>
+            <div class="status"><span class="tag">Dados</span><span class="tag">Visualização</span><span class="tag">Modelagem</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curso GitHub -->
+    <section class="card">
+      <div class="inner">
+        <h2>Curso GitHub por @gustavoguanabara</h2>
+        <p>O curso é gratuito e está disponível no <em>YouTube</em> e o repositório está no
+          <a href="https://github.com/gustavoguanabara/git-github.git" target="_blank" rel="noopener">GitHub</a>.
+        </p>
+
+        <details>
+          <summary>📋 Conteúdo programático</summary>
+          <ul>
+            <li>O que é Git e GitHub</li>
+            <li>Instalação e configuração</li>
+            <li>Repositórios locais vs. remotos</li>
+            <li>Commits, branches, merge</li>
+            <li>Pull requests e colaboração</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <footer>
+      Atualizado por Thaynara — Belo Horizonte, MG • Foco em aprendizagem contínua.
+    </footer>
+  </div>
+</body>
+</html>
+```
